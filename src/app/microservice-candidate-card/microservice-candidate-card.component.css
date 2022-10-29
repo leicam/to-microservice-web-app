@@ -1,0 +1,74 @@
+:host{
+    background: #F2F2F2;
+    border-radius: 5px;
+    font-family: "Signika", arial, sans-serif;
+    margin: 0 .78125% 50px;
+    width: 200px;
+    height: 200px;
+    place-items: center;
+}
+
+.microservice-card__number,
+.microservice-card__name{
+    padding: 0 10px;
+}
+
+.evaluation-select,
+.open-solution-button,
+.submit-button{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    margin: 5px;
+    width: 180px;
+    height: 30px;
+}
+
+.open-solution-button{
+    background-color: aqua;
+    color: #FFFFFF;
+}
+
+.submit-button{
+    background-color: aquamarine;
+    color: #FFFFFF;
+}
+
+.microservice-card__number{
+    color: #919191;
+    font-size: 80%;
+    padding-top: 2px;
+}
+
+.microservice-card__name{
+    color: #313131;
+    font-size: 145%;
+    margin-bottom: 5px;
+}
+
+.microservice-card__types{
+    display: flex;
+}
+
+.microservice-card__type{
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 3px;
+    line-height: 18px;
+    max-width: 110px;
+    width: 38.4375%;
+    float: left;
+    text-transform: none;
+    font-size: 11px;
+    text-align: center;
+}
+
+.microservice-card__type--evaluated{
+    background-color: greenyellow;
+    
+}
+
+.microservice-card__type--not{
+    background-color: red;
+    color: antiquewhite;
+}

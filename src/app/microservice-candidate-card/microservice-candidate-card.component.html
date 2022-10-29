@@ -1,0 +1,32 @@
+<div class="microservce-card-person">
+    <div class="microservice-card__name">
+        Solution - {{ microservice.name }}
+    </div>    
+
+    <div class="microservice-card__number">
+        N° {{ leadingZero(microservice.number) }}
+    </div>
+
+    <div class="microservice-card__evaluation">
+        <select name="evaluation-select" id="evaluation-select" class="evaluation-select">
+            <option value="bad">Bad</option>
+            <option value="median">Median</option>
+            <option value="good">Good</option>
+            <option value="very_god">Very Good</option>
+        </select>
+    </div>
+
+    <div class="microservice-card__open-solution">
+        <button type="button" id="open-solution-button" class="open-solution-button">Open Solution</button> 
+    </div>
+
+    <div class="microservice-card__submit">
+        <button type="button" id="submit-button" class="submit-button">Submit</button> 
+    </div>    
+
+    <div class="microservice-card__types">
+        <div class="microservice-card__type" 
+            *ngFor="let type of microservice.types"
+            [class]="'microservice-card__type--' + type.toLowerCase()">{{type}}</div>
+    </div>
+</div>
