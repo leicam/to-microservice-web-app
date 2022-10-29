@@ -1,32 +1,38 @@
-<div class="microservce-card-person">
+<div class="microservce-card">
     <div class="microservice-card__name">
         Solution - {{ microservice.name }}
     </div>    
 
-    <div class="microservice-card__number">
-        N° {{ leadingZero(microservice.number) }}
+    <div class="microservice-card__data">
+        <div class="microservice-card__number">
+            N° {{ leadingZero(microservice.number) }}
+        </div>
+    
+        <div class="microservice-card__types">
+            <div class="microservice-card__type" 
+                *ngFor="let type of microservice.types"
+                [class]="'microservice-card__type--' + type.toLowerCase()">{{type}}</div>
+        </div>
     </div>
-
+    
     <div class="microservice-card__evaluation">
-        <select name="evaluation-select" id="evaluation-select" class="evaluation-select">
-            <option value="bad">Bad</option>
-            <option value="median">Median</option>
-            <option value="good">Good</option>
-            <option value="very_god">Very Good</option>
-        </select>
+        <po-dropdown name="evaluation-select" id="evaluation-select" p-tooltip="Classification" p-tooltip-position="top"
+            [p-actions]="[
+                            {label:'Bad'},
+                            {label:'Median'},
+                            {label:'Good'},
+                            {label:'Very good'},
+                         ]">
+        </po-dropdown>
     </div>
 
     <div class="microservice-card__open-solution">
-        <button type="button" id="open-solution-button" class="open-solution-button">Open Solution</button> 
+        <po-button type="button" id="open-solution-button" p-type="default"
+                   p-icon="po-icon-eye" p-label="Open Solution"></po-button> 
     </div>
 
     <div class="microservice-card__submit">
-        <button type="button" id="submit-button" class="submit-button">Submit</button> 
-    </div>    
-
-    <div class="microservice-card__types">
-        <div class="microservice-card__type" 
-            *ngFor="let type of microservice.types"
-            [class]="'microservice-card__type--' + type.toLowerCase()">{{type}}</div>
+        <po-button type="button" id="submit-button" p-type="primary"
+        p-label="Submit"></po-button> 
     </div>
 </div>

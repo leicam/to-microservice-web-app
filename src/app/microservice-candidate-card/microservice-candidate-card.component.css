@@ -3,9 +3,21 @@
     border-radius: 5px;
     font-family: "Signika", arial, sans-serif;
     margin: 0 .78125% 50px;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 250px;
     place-items: center;
+}
+
+.microservce-card{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.microservice-card__data{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
 }
 
 .microservice-card__number,
@@ -13,31 +25,11 @@
     padding: 0 10px;
 }
 
-.evaluation-select,
-.open-solution-button,
-.submit-button{
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 3px;
-    margin: 5px;
-    width: 180px;
-    height: 30px;
-}
-
-.open-solution-button{
-    background-color: aqua;
-    color: #FFFFFF;
-}
-
-.submit-button{
-    background-color: aquamarine;
-    color: #FFFFFF;
-}
-
 .microservice-card__number{
-    color: #919191;
+    color: #313131;
     font-size: 80%;
     padding-top: 2px;
+    width: 110px;
 }
 
 .microservice-card__name{
@@ -56,11 +48,11 @@
     border-radius: 3px;
     line-height: 18px;
     max-width: 110px;
-    width: 38.4375%;
-    float: left;
+    float: right;
     text-transform: none;
     font-size: 11px;
     text-align: center;
+    height: 30px;
 }
 
 .microservice-card__type--evaluated{
