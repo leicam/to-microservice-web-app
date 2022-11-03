@@ -1,3 +1,10 @@
-<div class="start">
-    <po-button class="start-analysis-po-button" p-label="Start analysis" p-type="primary" routerLink="/list"></po-button>
-</div>
+<body>
+    <form #formConfig="ngForm">
+        <div class="startyAnalysisContainer">
+            <po-loading-overlay [hidden]="isHideLoading"></po-loading-overlay>
+        </div>
+
+        <po-button class="startAnalysisButton" p-label="Start analysis" p-type="primary"
+                   [p-disabled]="formConfig.invalid" (p-click)="connectionTest(); formConfig.reset()"></po-button>
+    </form>
+</body>
