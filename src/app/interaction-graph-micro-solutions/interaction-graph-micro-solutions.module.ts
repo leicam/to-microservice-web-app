@@ -33,7 +33,7 @@ import { NgxGraphModule } from '@swimlane/ngx-graph';
     AccordionModule,
     PanelMenuModule,
     MenuModule,
-    NgxGraphModule,
+    NgxGraphModule,    
   ],
   providers: [
     ApiService

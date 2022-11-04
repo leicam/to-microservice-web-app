@@ -1,2 +1,9 @@
-<p-menu [model]="items" [style]="{'width':'450px'}"></p-menu>
-<ngx-graph class="chart-container" [view]="[800, 200]" [showMiniMap]="true" [links]="link" [nodes]="node"></ngx-graph>
+<div class="centerpanel">
+    <div class="left">
+        <p-menu [model]="items" [style]="{'width':'450px'}"></p-menu>
+    </div>
+    <div class="right">
+        <ngx-graph class="chart-container" [view]="[800, 200]" [showMiniMap]="true" [links]="link" [nodes]="node"></ngx-graph>
+    </div>
+    <div class="clearfix"></div>
+</div>
