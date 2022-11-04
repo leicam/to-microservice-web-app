@@ -11,6 +11,10 @@ import {SidebarModule} from 'primeng/sidebar';
 import {SplitterModule} from 'primeng/splitter';
 import {DividerModule} from 'primeng/divider';
 import { TreeComponent } from './interaction-graph-micro-solutions/components/tree/tree.component';
+import {AccordionModule} from 'primeng/accordion';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PanelMenuModule } from 'primeng/panelmenu';
+
 @NgModule({
   declarations: [
     InteractionGraphMicroSolutionsComponent,
@@ -24,7 +28,10 @@ import { TreeComponent } from './interaction-graph-micro-solutions/components/tr
     HttpClientModule,
     SidebarModule,
     SplitterModule,
-    DividerModule
+    DividerModule,
+    AccordionModule,
+    //BrowserAnimationsModule,
+    PanelMenuModule,
   ],
   providers: [
     ApiService
