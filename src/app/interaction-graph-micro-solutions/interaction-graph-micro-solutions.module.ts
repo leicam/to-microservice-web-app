@@ -12,8 +12,9 @@ import {SplitterModule} from 'primeng/splitter';
 import {DividerModule} from 'primeng/divider';
 import { TreeComponent } from './interaction-graph-micro-solutions/components/tree/tree.component';
 import {AccordionModule} from 'primeng/accordion';
-//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { MenuModule } from 'primeng/menu';
+import { NgxGraphModule } from '@swimlane/ngx-graph';
 
 @NgModule({
   declarations: [
@@ -30,8 +31,9 @@ import { PanelMenuModule } from 'primeng/panelmenu';
     SplitterModule,
     DividerModule,
     AccordionModule,
-    //BrowserAnimationsModule,
     PanelMenuModule,
+    MenuModule,
+    NgxGraphModule,
   ],
   providers: [
     ApiService

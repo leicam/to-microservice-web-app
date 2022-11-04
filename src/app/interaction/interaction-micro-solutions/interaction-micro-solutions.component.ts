@@ -16,7 +16,6 @@ export class InteractionMicroSolutionsComponent implements OnInit {
   }
 
   async navigateToGraph() {
-    console.log('Aqui!!')
     await this.router.navigate(['interaction-graph'])
   }
 }

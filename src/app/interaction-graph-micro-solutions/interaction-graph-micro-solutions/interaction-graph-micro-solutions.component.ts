@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, TreeNode } from 'primeng/api';
-import { ApiService } from '../../shared/services/api.service';
+import { MenuItem } from 'primeng/api';
+import { Layout, Edge, Node } from '@swimlane/ngx-graph';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-interaction-graph-micro-solutions',
@@ -10,9 +11,32 @@ import { ApiService } from '../../shared/services/api.service';
 
 export class InteractionGraphMicroSolutionsComponent implements OnInit{
   items: MenuItem[] = [];
+  link = [
+    {
+      id: 'a',
+      source: 'first',
+      target: 'second',
+      label: 'is parent of'
+    }, {
+      id: 'b',
+      source: 'first',
+      target: 'third',
+      label: 'custom label'
+    }
+  ];
 
-  constructor(private apiService: ApiService) { }
-
+  node = [
+    {
+      id: 'first',
+      label: 'A'
+    }, {
+      id: 'second',
+      label: 'B'
+    }, {
+      id: 'third',
+      label: 'C'
+    }
+  ];
 
   ngOnInit(): void {
     this.items = [
