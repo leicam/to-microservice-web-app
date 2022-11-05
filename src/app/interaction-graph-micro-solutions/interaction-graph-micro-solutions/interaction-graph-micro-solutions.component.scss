@@ -9,26 +9,15 @@
     padding: 20px;
 }
 
-.page-main {
-    flex-grow: 1;
-}
-
-.navCard{
-    height: 35px;
-}
-
-.navDiv{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
 .main{
     display: flex;
     flex-direction: row;
+    align-items: stretch;
+    flex: 1;
 }
 
-.chart-container{
-    
+.divGraph{
+    width: 68%;
 }
 
 .footerButtons{
