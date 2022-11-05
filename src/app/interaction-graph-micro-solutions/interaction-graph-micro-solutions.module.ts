@@ -15,6 +15,8 @@ import {AccordionModule} from 'primeng/accordion';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { MenuModule } from 'primeng/menu';
 import { NgxGraphModule } from '@swimlane/ngx-graph';
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { NgxGraphModule } from '@swimlane/ngx-graph';
     AccordionModule,
     PanelMenuModule,
     MenuModule,
-    NgxGraphModule,    
+    NgxGraphModule,
+    CardModule,
+    ButtonModule,
   ],
   providers: [
     ApiService

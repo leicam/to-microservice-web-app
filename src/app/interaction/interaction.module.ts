@@ -17,11 +17,9 @@ import { SharedModule } from '../shared/shared.module';
 @NgModule({
   declarations: [InteractionMicroSolutionsComponent],
   imports: [
-    //Angular
     CommonModule,
     InteractionRoutingModule,
     SharedModule,
-    //PrimeNG
     CardModule,
     InputTextModule,
     ButtonModule,

@@ -1,9 +1,40 @@
-<div class="centerpanel">
-    <div class="left">
-        <p-menu [model]="items" [style]="{'width':'450px'}"></p-menu>
-    </div>
-    <div class="right">
-        <ngx-graph class="chart-container" [view]="[800, 200]" [showMiniMap]="true" [links]="link" [nodes]="node"></ngx-graph>
-    </div>
-    <div class="clearfix"></div>
+<div class="wrapper">
+    <p-header><h1>Microservices Solutions</h1></p-header>
+
+    <nav>
+        <div class="navDiv">
+            <button pButton class="p-button-sm">
+              <i class="pi pi-wrench"></i> &nbsp; Actions
+            </button>
+        </div>
+    </nav>
+    
+    <main class="main">
+        <div>
+            <p-menu [model]="items" [style]="{'width':'450px'}"></p-menu>
+        </div>
+        <div>
+            <p-card>
+                <ngx-graph class="chart-container" [showMiniMap]="true" [links]="link" [nodes]="node"></ngx-graph>
+            </p-card>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footerButtons">
+            <div class="containerButtons">
+                <button pButton class="p-button-outlined">Data</button>
+                <button pButton type="button" class="p-button">Graph</button>
+                <button pButton class="p-button-outlined">Table</button>
+            </div>
+        
+            <div>
+                <button pButton type="button">Download</button>
+            </div>
+        </div>
+    
+        <div>
+            <p>Copyright©2022-2023</p>
+        </div>
+    </footer>
 </div>
