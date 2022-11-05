@@ -14,6 +14,7 @@ import { TreeComponent } from './interaction-graph-micro-solutions/components/tr
 import {AccordionModule} from 'primeng/accordion';
 //import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { MenuModule } from 'primeng/menu';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { PanelMenuModule } from 'primeng/panelmenu';
     AccordionModule,
     //BrowserAnimationsModule,
     PanelMenuModule,
+    MenuModule,
   ],
   providers: [
     ApiService
