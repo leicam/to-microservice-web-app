@@ -24,6 +24,16 @@ const routes: Routes = [
           interactionGraph.InteractionGraphMicroSolutionsModule
       ),
   },
+  {
+    path: 'interaction-finally',
+    loadChildren: () =>
+      import(
+        './interaction-finally/interaction-finally-page.module'
+      ).then(
+        (interactionFinally) =>
+        interactionFinally.InteractionFinallyModule
+      ),
+  },
 ];
 
 @NgModule({

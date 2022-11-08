@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { CheckboxModule } from 'primeng/checkbox';
 import { SharedModule } from '../shared/shared.module';
+import {ToastModule} from 'primeng/toast';
 
 @NgModule({
   declarations: [InteractionMicroSolutionsComponent],
@@ -28,7 +29,8 @@ import { SharedModule } from '../shared/shared.module';
     MenuModule,
     BrowserAnimationsModule,
     InputNumberModule,
-    CheckboxModule
+    CheckboxModule,
+    ToastModule,
   ],
 })
 export class InteractionModule {}
