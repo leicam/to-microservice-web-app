@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { InteractionGraphMicroSolutionsComponent } from './interaction-graph-micro-solutions/interaction-graph-micro-solutions.component';
 import {TreeModule} from 'primeng/tree';
 import { InteractionGraphRoutingModule } from './interaction-graph-micro-solutions-routing.module';
+import { InteractionFinallyPageRoutingModule } from '../interaction-finally/interaction-finally-page-routing.module';
 import {TreeNode} from 'primeng/api';
 import { SharedModule } from '../shared/shared.module';
 import { ApiService } from '../shared/services/api.service';
@@ -27,6 +28,7 @@ import { ButtonModule } from 'primeng/button';
     CommonModule,
     TreeModule,
     InteractionGraphRoutingModule,
+    InteractionFinallyPageRoutingModule,
     SharedModule,
     HttpClientModule,
     SidebarModule,

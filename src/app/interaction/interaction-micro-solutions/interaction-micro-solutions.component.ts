@@ -5,7 +5,8 @@ import {MessageService} from 'primeng/api';
 @Component({
   selector: 'app-interaction-micro-solutions',
   templateUrl: './interaction-micro-solutions.component.html',
-  styleUrls: ['./interaction-micro-solutions.component.scss']
+  styleUrls: ['./interaction-micro-solutions.component.scss'],
+  providers: [MessageService]
 })
 export class InteractionMicroSolutionsComponent implements OnInit {
 
@@ -21,7 +22,7 @@ export class InteractionMicroSolutionsComponent implements OnInit {
   }
 
   async navigateToFinally() {
-    await this.router.navigate(['interaction-finally'])
+    this.messageService.add({key: 'bc', severity:'success', summary: 'Success', detail: 'Candidate solutions for microservices successfully evaluated!'});
   }
 
   addSingle() {
@@ -31,6 +32,18 @@ export class InteractionMicroSolutionsComponent implements OnInit {
   addMultiple() {
     this.messageService.addAll([{severity:'success', summary:'Service Message', detail:'Via MessageService'},
                                 {severity:'info', summary:'Info Message', detail:'Via MessageService'}]);
+  }
+
+  showSticky() {
+    this.messageService.add({severity:'info', summary: 'Sticky', detail: 'Message Content', sticky: true});
+  }
+
+  onConfirm() {
+    this.messageService.clear('c');
+  }
+
+  onReject() {
+    this.messageService.clear('c');
   }
 
   clear() {

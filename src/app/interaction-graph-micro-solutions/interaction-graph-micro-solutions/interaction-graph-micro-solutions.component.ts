@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import {PanelMenuModule} from 'primeng/panelmenu';
 import { Layout, Edge, Node } from '@swimlane/ngx-graph';
 import { HttpClient } from '@angular/common/http';
 

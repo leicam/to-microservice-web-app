@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './interaction-finally-page.component.html',
   styleUrls: ['./interaction-finally-page.component.scss']
 })
+
 export class InteractionFinallyPageComponent implements OnInit {
 
   constructor() { }
