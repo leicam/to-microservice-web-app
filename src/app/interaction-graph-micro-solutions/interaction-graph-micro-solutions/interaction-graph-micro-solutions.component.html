@@ -11,11 +11,8 @@
     
     <main class="main">
         <div>
-            <p-panelMenu [model]="items" [style]="{'width':'450px', 'height':'100%', 'margin-right':'15px'}"></p-panelMenu>
+            <p-panelMenu [model]="items" [style]="{'width':'500px', 'height':'100%', 'margin-right':'15px'}"></p-panelMenu>
         </div>
-        <!-- <div class="divGraph">
-            <ngx-graph class="chart-container" [style]="{'height':'100%'}" [showMiniMap]="true" [links]="link" [nodes]="node"></ngx-graph>
-        </div> -->
 
         <div *ngIf="graphVisivel">
             <app-graph-micro-solutions [graphVisivel]="graphVisivel"></app-graph-micro-solutions>
