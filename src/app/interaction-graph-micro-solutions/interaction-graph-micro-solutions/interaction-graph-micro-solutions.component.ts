@@ -19,7 +19,7 @@ export class InteractionGraphMicroSolutionsComponent implements OnInit{
   items: MenuItem[] = [];
 
   constructor(private router: Router) { }
-  
+
   ngOnInit(): void {
     this.items = [
       {
@@ -40,13 +40,13 @@ export class InteractionGraphMicroSolutionsComponent implements OnInit{
             label: 'Microservice 2'
           },
           {
-            label: 'teste.gerado.ManterAluno#Method:executar#SizeOf:30#Deep:1#Thread:main'
+            label: 'teste.gerado.ManterAluno#Method:executar#SizeOf:30'
           },
           {
-            label: 'teste.gerado.ManterLivro#Method:executar1#SizeOf:30#Deep:2#Thread:main'
+            label: 'teste.gerado.ManterLivro#Method:executar1#SizeOf:30'
           },
           {
-            label: 'teste.gerado.ManterAluno#Method:executar#SizeOf:30#Deep:1#Thread:main'
+            label: 'teste.gerado.ManterAluno#Method:executar#SizeOf:30'
           }
         ]
       },
@@ -57,13 +57,13 @@ export class InteractionGraphMicroSolutionsComponent implements OnInit{
             label: 'test.generate.KeepStudentOne.executeFour!KeepStudent!'
           },
           {
-            label: 'teste.gerado.ManterAluno#Method:executar#SizeOf:30#Deep:1#Thread:main'
+            label: 'teste.gerado.ManterAluno#Method:executar#SizeOf:30'
           },
           {
             label: 'Microservice 0'
           },
           {
-            label: 'teste.gerado.ManterLivro#Method:executar1#SizeOf:30#Deep:2#Thread:main'
+            label: 'teste.gerado.ManterLivro#Method:executar1#SizeOf:30'
           }
         ]
       }
