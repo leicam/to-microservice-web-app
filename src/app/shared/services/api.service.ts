@@ -11,6 +11,6 @@ export class ApiService {
 
 
   getFiles() {
-    return this.http.get<any>('assets/mock.json').toPromise().then(res => <TreeNode[]> res.data);
+    return this.http.get<any>('assets/mock.json').pipe(map(res => <TreeNode[]> res.data));
   }
 }

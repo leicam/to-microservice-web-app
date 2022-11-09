@@ -4,6 +4,7 @@ import {PanelMenuModule} from 'primeng/panelmenu';
 import { Layout, Edge, Node } from '@swimlane/ngx-graph';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { TreeNode } from 'primeng/api';
 
 @Component({
   selector: 'app-interaction-graph-micro-solutions',
@@ -12,33 +13,10 @@ import { Router } from '@angular/router';
 })
 
 export class InteractionGraphMicroSolutionsComponent implements OnInit{
-  items: MenuItem[] = [];
-  link = [
-    {
-      id: 'a',
-      source: 'first',
-      target: 'second',
-      label: 'is parent of'
-    }, {
-      id: 'b',
-      source: 'first',
-      target: 'third',
-      label: 'custom label'
-    }
-  ];
+  tabelaVisivel = false;
+  graphVisivel = true;
 
-  node = [
-    {
-      id: 'first',
-      label: 'A'
-    }, {
-      id: 'second',
-      label: 'B'
-    }, {
-      id: 'third',
-      label: 'C'
-    }
-  ];
+  items: MenuItem[] = [];
 
   constructor(private router: Router) { }
 
@@ -94,5 +72,15 @@ export class InteractionGraphMicroSolutionsComponent implements OnInit{
 
   async navigateToHome() {
     await this.router.navigateByUrl('/')
+  }
+
+  viewGraph() {
+    this.graphVisivel = true;
+    this.tabelaVisivel = false;
+  }
+
+  viewTable() {
+    this.graphVisivel = false;
+    this.tabelaVisivel = true;
   }
 }

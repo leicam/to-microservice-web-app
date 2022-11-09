@@ -1,0 +1,26 @@
+<p-table #dt1 [value]="arrayMicroSolutions" responsiveLayout="scroll" [globalFilterFields]="['microService','metric','value','trace']">
+    <ng-template pTemplate="caption">
+        <span class="p-input-icon-left ml-auto">
+        <i class="pi pi-search"></i>
+        <input pInputText type="text" (keydown)="filter(dt1.value, 'contains')" placeholder="Search keyword" />
+    </span>
+    </ng-template>
+
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Microservice</th>
+            <th>Metric</th>
+            <th>Value</th>
+            <th>Trace</th>
+        </tr>
+    </ng-template>
+    
+    <ng-template pTemplate="body" let-microSolution>
+        <tr>
+            <td>{{microSolution.microService}}</td>
+            <td>{{microSolution.metric}}</td>
+            <td>{{microSolution.value}}</td>
+            <td>{{microSolution.trace}}</td>
+        </tr>
+    </ng-template>
+</p-table>

@@ -13,8 +13,16 @@
         <div>
             <p-panelMenu [model]="items" [style]="{'width':'450px', 'height':'100%', 'margin-right':'15px'}"></p-panelMenu>
         </div>
-        <div class="divGraph">
+        <!-- <div class="divGraph">
             <ngx-graph class="chart-container" [style]="{'height':'100%'}" [showMiniMap]="true" [links]="link" [nodes]="node"></ngx-graph>
+        </div> -->
+
+        <div *ngIf="graphVisivel">
+            <app-graph-micro-solutions [graphVisivel]="graphVisivel"></app-graph-micro-solutions>
+        </div>
+
+        <div *ngIf="tabelaVisivel">
+            <app-table-micro-solutions [tabelaVisivel]="tabelaVisivel"></app-table-micro-solutions>
         </div>
     </main>
     
@@ -23,8 +31,8 @@
             <div class="containerButtons">
                 <button pButton type="button" class="p-button" (click)="navigateToHome()" >Back</button>
                 <button pButton class="p-button-outlined">Data</button>
-                <button pButton type="button" class="p-button">Graph</button>
-                <button pButton class="p-button-outlined">Table</button>
+                <button pButton class="p-button-outlined" (click)="viewGraph()">Graph</button>
+                <button pButton class="p-button-outlined" (click)="viewTable()">Table</button>
             </div>
         
             <div>
