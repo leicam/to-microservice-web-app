@@ -14,8 +14,8 @@
             <p-panelMenu [model]="items" [style]="{'width':'500px', 'height':'100%', 'margin-right':'15px'}"></p-panelMenu>
         </div>
 
-        <div *ngIf="graphVisivel" [style]="{'height':'100%'}">
-            <app-graph-micro-solutions [style]="{'height':'100%'}" [graphVisivel]="graphVisivel"></app-graph-micro-solutions>
+        <div *ngIf="graphVisivel">
+            <app-graph-micro-solutions [graphVisivel]="graphVisivel"></app-graph-micro-solutions>
         </div>
 
         <div *ngIf="tabelaVisivel">
